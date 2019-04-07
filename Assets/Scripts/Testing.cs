@@ -9,6 +9,6 @@ public class Testing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(0.0f, 0.0f, speed) ;
+        transform.position -= new Vector3(0.0f, 0.0f, speed * Time.deltaTime) ;
     }
 }

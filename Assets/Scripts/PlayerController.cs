@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
         rb.rotation = Quaternion.Euler(moveVertical * tilt.x, 0, moveHorizontal * -tilt.y);
         rb.position = new Vector3(
             Mathf.Clamp(rb.position.x, boundary.xMin, boundary.xMax),
-            0.0f,
+            transform.position.y,
             Mathf.Clamp(rb.position.z, boundary.zMin, boundary.zMax)
         );
     }
